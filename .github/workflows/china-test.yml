@@ -1,0 +1,53 @@
+name: china-test
+
+on:
+  workflow_dispatch:
+    inputs:
+      fix:
+        description: '自动删除无效频道并提交'
+        type: boolean
+        default: false
+  schedule:
+    # 每周三 UTC 03:00（北京时间周三 11:00）
+    - cron: '0 3 * * 3'
+
+permissions:
+  contents: write
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Test china.m3u
+        id: test
+        run: |
+          if [ "${{ inputs.fix }}" = "true" ]; then
+            npm run china:fix || true
+          else
+            npm run china:test || true
+          fi
+
+      - name: Commit fixed china.m3u
+        if: ${{ inputs.fix == true }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add china.m3u
+          if git diff --cached --quiet; then
+            echo "所有频道均有效，无需修改"
+          else
+            git commit -m "移除无效频道" -m "由 china-test workflow 自动清理死链"
+            git push
+          fi
