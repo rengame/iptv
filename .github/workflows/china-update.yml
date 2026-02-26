@@ -1,0 +1,58 @@
+name: china-update
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 每周一 UTC 02:00（北京时间周一 10:00），上游每天 0:00 UTC 更新
+    - cron: '0 2 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Fetch upstream cn streams
+        run: |
+          git remote add upstream https://github.com/iptv-org/iptv.git
+          git fetch upstream master --depth=1
+          # 临时用上游的 streams/cn*.m3u 覆盖本地（仅作为脚本输入，不提交）
+          git checkout upstream/master -- \
+            streams/cn.m3u \
+            streams/cn_cctv.m3u \
+            streams/cn_cgtn.m3u \
+            streams/cn_112114.m3u \
+            streams/cn_yeslivetv.m3u \
+            2>/dev/null || true
+
+      - name: Update china.m3u URLs
+        run: npm run china:update
+
+      - name: Restore upstream streams files
+        # 不把上游文件带入提交，只保留 china.m3u 的变更
+        run: git checkout HEAD -- streams/
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add china.m3u
+          if git diff --cached --quiet; then
+            echo "china.m3u 无变化，跳过提交"
+          else
+            git commit -m "更新中国频道" -m "由 china-update workflow 自动同步上游流地址"
+            git push
+          fi
