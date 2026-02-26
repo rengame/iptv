@@ -30,6 +30,11 @@ npm run playlist:update
 # 测试流链接可用性
 npm run playlist:test
 
+# china.m3u 专用命令
+npm run china:test    # 测试所有频道 URL，输出状态报告（不改文件）
+npm run china:fix     # 标记失效 URL 为占位符 http://0.0.0.0（保留频道信息）
+npm run china:update  # 从 iptv-org（tvg-id匹配）+ fanmingming/live（名称匹配）恢复 URL
+
 # 代码检查
 npm run lint
 
@@ -115,28 +120,28 @@ Stream 对象的关键字段（来自 `scripts/models/stream.ts`）：
 
 | 显示名称 | tvg-id |
 |---------|--------|
-| 央视综合 (2160p) | CCTV1.cn@SD |
-| 央视财经 (2160p) | CCTV2.cn@SD |
-| 央视综艺 (2160p) | CCTV3.cn@SD |
-| 央视体育 (2160p) | CCTV5.cn@SD |
-| 央视体育赛事 (2160p) | CCTV5Plus.cn@SD |
-| 央视电影 (2160p) | CCTV6.cn@SD |
-| 央视国防军事 (2160p) | CCTV7.cn@SD |
-| 央视电视剧 (2160p) | CCTV8.cn@SD |
-| 央视纪录 (2160p) | CCTV9.cn@SD |
-| 央视科教 (2160p) | CCTV10.cn@SD |
-| 央视戏曲 (576p) | CCTV11.cn@SD |
-| 央视社会与法 (2160p) | CCTV12.cn@SD |
-| 央视新闻 (1080p) | CCTV13.cn@SD |
-| 央视少儿 (2160p) | CCTV14.cn@SD |
-| 央视音乐 (576p) | CCTV15.cn@SD |
-| 央视奥林匹克 (2160p) | CCTV16.cn@SD |
-| 央视农业农村 (2160p) | CCTV17.cn@SD |
-| 央视国际1 (600p) [非全天直播] | CCTVPlus1.cn@SD |
-| 央视国际2 (600p) [非全天直播] | CCTVPlus2.cn@SD |
-| 中国国际电视台 (1080p) | CGTN.cn@SD |
-| 央视中文国际（美洲版）(1080p) | CCTV4America.cn@SD |
-| 央视中文国际（欧洲版） | CCTV4Europe.cn@SD |
+| CCTV-1 综合 | CCTV1.cn@SD |
+| CCTV-2 财经 | CCTV2.cn@SD |
+| CCTV-3 综艺 | CCTV3.cn@SD |
+| CCTV-5 体育 | CCTV5.cn@SD |
+| CCTV-5+ 体育赛事 | CCTV5Plus.cn@SD |
+| CCTV-6 电影 | CCTV6.cn@SD |
+| CCTV-7 国防军事 | CCTV7.cn@SD |
+| CCTV-8 电视剧 | CCTV8.cn@SD |
+| CCTV-9 纪录 | CCTV9.cn@SD |
+| CCTV-10 科教 | CCTV10.cn@SD |
+| CCTV-11 戏曲 | CCTV11.cn@SD |
+| CCTV-12 社会与法 | CCTV12.cn@SD |
+| CCTV-13 新闻 | CCTV13.cn@SD |
+| CCTV-14 少儿 | CCTV14.cn@SD |
+| CCTV-15 音乐 | CCTV15.cn@SD |
+| CCTV-16 奥林匹克 | CCTV16.cn@SD |
+| CCTV-17 农业农村 | CCTV17.cn@SD |
+| CCTV Plus 1 [非全天直播] | CCTVPlus1.cn@SD |
+| CCTV Plus 2 [非全天直播] | CCTVPlus2.cn@SD |
+| CGTN | CGTN.cn@SD |
+| CCTV-4 中文国际(美洲) | CCTV4America.cn@SD |
+| CCTV-4 中文国际(欧洲) | CCTV4Europe.cn@SD |
 
 ### 各省卫视（33个）
 

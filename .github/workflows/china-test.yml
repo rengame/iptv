@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       fix:
-        description: '自动删除无效频道并提交'
+        description: '自动标记失效 URL 并尝试从上游恢复'
         type: boolean
         default: false
   schedule:
@@ -30,24 +30,39 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Test china.m3u
-        id: test
-        run: |
-          if [ "${{ inputs.fix }}" = "true" ]; then
-            npm run china:fix || true
-          else
-            npm run china:test || true
-          fi
+      - name: Test china.m3u（仅报告）
+        if: ${{ inputs.fix != true }}
+        run: npm run china:test || true
 
-      - name: Commit fixed china.m3u
+      - name: Fix broken URLs（标记占位符 + 写入死链记录）
+        if: ${{ inputs.fix == true }}
+        run: npm run china:fix
+
+      - name: Update URLs from upstream（跳过死链，尝试 fanmingming 恢复）
+        if: ${{ inputs.fix == true }}
+        run: |
+          git remote add upstream https://github.com/iptv-org/iptv.git
+          git fetch upstream master --depth=1
+          git checkout upstream/master -- \
+            streams/cn.m3u \
+            streams/cn_cctv.m3u \
+            streams/cn_cgtn.m3u \
+            streams/cn_112114.m3u \
+            streams/cn_yeslivetv.m3u \
+            2>/dev/null || true
+          npm run china:update
+          git checkout HEAD -- streams/
+
+      - name: Commit changes
         if: ${{ inputs.fix == true }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add china.m3u
           if git diff --cached --quiet; then
-            echo "所有频道均有效，无需修改"
+            echo "china.m3u 无变化"
           else
-            git commit -m "移除无效频道" -m "由 china-test workflow 自动清理死链"
+            git commit -m "修复无效频道 URL" \
+              -m "china-test workflow：标记死链 → 尝试从 iptv-org / fanmingming 恢复"
             git push
           fi

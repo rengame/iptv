@@ -15,7 +15,7 @@
     "playlist:export": "tsx scripts/commands/playlist/export.ts",
     "china:update": "tsx scripts/commands/china/update-urls.ts",
     "china:test": "tsx scripts/commands/playlist/test.ts china.m3u",
-    "china:fix": "tsx scripts/commands/playlist/test.ts china.m3u --fix",
+    "china:fix": "tsx scripts/commands/china/fix-broken.ts",
     "readme:update": "tsx scripts/commands/readme/update.ts",
     "report:create": "tsx scripts/commands/report/create.ts",
     "lint": "npx eslint \"scripts/**/*.{ts,js}\" \"tests/**/*.{ts,js}\"",
