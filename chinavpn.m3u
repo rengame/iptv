@@ -1,72 +1,72 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="BingtuanSatelliteTV.cn@SD" tvg-logo="https://i.imgur.com/Y4qxDqz.png" group-title="各省卫视",兵团卫视
-http://10.8.19.1:4022/udp/233.18.204.221:5140
+http://10.8.19.1:4022/rtp/233.18.204.221:5140
 #EXTINF:-1 tvg-id="BRTVKakuChildrensChannel.cn@SD" tvg-logo="https://i.imgur.com/t8X4wPZ.png" group-title="儿童",北京卡酷少儿频道
-http://10.8.19.1:4022/udp/233.18.204.109:5140
+http://10.8.19.1:4022/rtp/233.18.204.109:5140
 #EXTINF:-1 tvg-id="BeijingSatelliteTV.cn@SD" tvg-logo="https://i.imgur.com/vsktAez.png" group-title="各省卫视",北京卫视
-http://10.8.19.1:4022/udp/233.18.204.87:5140
+http://10.8.19.1:4022/rtp/233.18.204.87:5140
 #EXTINF:-1 tvg-id="CCTVPlus1.cn@SD" tvg-logo="https://i.imgur.com/U8d4Is6.png" group-title="央视频道",CCTV Plus 1
 https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CCTVPlus2.cn@SD" tvg-logo="https://i.imgur.com/qSg862A.png" group-title="央视频道",CCTV Plus 2
 https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CCTV1.cn@SD" tvg-logo="https://i.imgur.com/TpA3cUl.png" group-title="央视频道",CCTV-1 综合
-http://10.8.19.1:4022/udp/233.18.204.52:5140
+http://10.8.19.1:4022/rtp/233.18.204.52:5140
 #EXTINF:-1 tvg-id="CCTV2.cn@SD" tvg-logo="https://i.imgur.com/ILamhwU.png" group-title="央视频道",CCTV-2 财经
-http://10.8.19.1:4022/udp/233.18.204.68:5140
+http://10.8.19.1:4022/rtp/233.18.204.68:5140
 #EXTINF:-1 tvg-id="CCTV3.cn@SD" tvg-logo="https://i.imgur.com/iFlkIuw.png" group-title="央视频道",CCTV-3 综艺
-http://10.8.19.1:4022/udp/233.18.204.69:5140
+http://10.8.19.1:4022/rtp/233.18.204.69:5140
 #EXTINF:-1 tvg-id="CCTV4America.cn@SD" tvg-logo="https://i.imgur.com/gBbLyqh.png" group-title="央视频道",CCTV-4 中文国际(美洲)
 https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 #EXTINF:-1 tvg-id="CCTV4Europe.cn@SD" tvg-logo="https://i.imgur.com/HGLFdfk.png" group-title="央视频道",CCTV-4 中文国际(欧洲)
 https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
 #EXTINF:-1 tvg-id="CCTV5.cn@SD" tvg-logo="https://i.imgur.com/nbmnGwE.png" group-title="央视频道",CCTV-5 体育
-http://10.8.19.1:4022/udp/233.18.204.71:5140
+http://10.8.19.1:4022/rtp/233.18.204.71:5140
 #EXTINF:-1 tvg-id="CCTV5Plus.cn@SD" tvg-logo="https://i.imgur.com/OK8mdJV.png" group-title="央视频道",CCTV-5+ 体育赛事
-http://10.8.19.1:4022/udp/233.18.204.67:5140
+http://10.8.19.1:4022/rtp/233.18.204.67:5140
 #EXTINF:-1 tvg-id="CCTV6.cn@SD" tvg-logo="https://i.imgur.com/rFiaef7.png" group-title="央视频道",CCTV-6 电影
-http://10.8.19.1:4022/udp/233.18.204.72:5140
+http://10.8.19.1:4022/rtp/233.18.204.72:5140
 #EXTINF:-1 tvg-id="CCTV7.cn@SD" tvg-logo="https://i.imgur.com/CKcPMQC.png" group-title="央视频道",CCTV-7 国防军事
-http://10.8.19.1:4022/udp/233.18.204.73:5140
+http://10.8.19.1:4022/rtp/233.18.204.73:5140
 #EXTINF:-1 tvg-id="CCTV8.cn@SD" tvg-logo="https://i.imgur.com/GyHaZ8X.png" group-title="央视频道",CCTV-8 电视剧
-http://10.8.19.1:4022/udp/233.18.204.74:5140
+http://10.8.19.1:4022/rtp/233.18.204.74:5140
 #EXTINF:-1 tvg-id="CCTV9.cn@SD" tvg-logo="https://i.postimg.cc/Bvjp0G41/cctv9.png" group-title="央视频道",CCTV-9 纪录
-http://10.8.19.1:4022/udp/233.18.204.75:5140
+http://10.8.19.1:4022/rtp/233.18.204.75:5140
 #EXTINF:-1 tvg-id="CCTV10.cn@SD" tvg-logo="https://i.imgur.com/sSSO7UD.png" group-title="央视频道",CCTV-10 科教
-http://10.8.19.1:4022/udp/233.18.204.76:5140
+http://10.8.19.1:4022/rtp/233.18.204.76:5140
 #EXTINF:-1 tvg-id="CCTV11.cn@SD" tvg-logo="https://i.imgur.com/CjOWx7L.png" group-title="央视频道",CCTV-11 戏曲
-http://10.8.19.1:4022/udp/233.18.204.77:5140
+http://10.8.19.1:4022/rtp/233.18.204.77:5140
 #EXTINF:-1 tvg-id="CCTV12.cn@SD" tvg-logo="https://i.imgur.com/3yTuiOM.png" group-title="央视频道",CCTV-12 社会与法
-http://10.8.19.1:4022/udp/233.18.204.78:5140
+http://10.8.19.1:4022/rtp/233.18.204.78:5140
 #EXTINF:-1 tvg-id="CCTV13.cn@SD" tvg-logo="https://i.imgur.com/6MTar6J.png" group-title="央视频道",CCTV-13 新闻
-http://10.8.19.1:4022/udp/233.18.204.79:5140
+http://10.8.19.1:4022/rtp/233.18.204.79:5140
 #EXTINF:-1 tvg-id="CCTV14.cn@SD" tvg-logo="https://i.imgur.com/c5SXW7i.png" group-title="央视频道",CCTV-14 少儿
-http://10.8.19.1:4022/udp/233.18.204.80:5140
+http://10.8.19.1:4022/rtp/233.18.204.80:5140
 #EXTINF:-1 tvg-id="CCTV15.cn@SD" tvg-logo="https://i.imgur.com/CCV0eRG.png" group-title="央视频道",CCTV-15 音乐
-http://10.8.19.1:4022/udp/233.18.204.81:5140
+http://10.8.19.1:4022/rtp/233.18.204.81:5140
 #EXTINF:-1 tvg-id="CCTV16.cn@SD" tvg-logo="https://i.imgur.com/ZzV6JQp.png" group-title="央视频道",CCTV-16 奥林匹克
-http://10.8.19.1:4022/udp/233.18.204.215:5140
+http://10.8.19.1:4022/rtp/233.18.204.215:5140
 #EXTINF:-1 tvg-id="CCTV17.cn@SD" tvg-logo="https://i.imgur.com/jSQURxS.png" group-title="央视频道",CCTV-17 农业农村
-http://10.8.19.1:4022/udp/233.18.204.83:5140
+http://10.8.19.1:4022/rtp/233.18.204.83:5140
 #EXTINF:-1 tvg-id="CETV1.cn@SD" tvg-logo="https://i.imgur.com/6sOHLq8.png" group-title="教育",中国教育1套 (576p)
-http://10.8.19.1:4022/udp/233.18.204.98:5140
+http://10.8.19.1:4022/rtp/233.18.204.98:5140
 #EXTINF:-1 tvg-id="CETV2.cn@SD" tvg-logo="https://i.imgur.com/ZD8XPmw.png" group-title="教育",中国教育2套 (576p)
-http://10.8.19.1:4022/udp/233.18.204.154:5140
+http://10.8.19.1:4022/rtp/233.18.204.154:5140
 #EXTINF:-1 tvg-id="CETV4.cn@SD" tvg-logo="https://i.imgur.com/a1N6wB7.png" group-title="未分类",中国教育4套
-http://10.8.19.1:4022/udp/233.18.204.111:5140
+http://10.8.19.1:4022/rtp/233.18.204.111:5140
 #EXTINF:-1 tvg-id="CGTN.cn@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/512px-CGTN.svg.png" group-title="央视频道",CGTN
-http://10.8.19.1:4022/udp/233.18.204.28:5140
+http://10.8.19.1:4022/rtp/233.18.204.28:5140
 #EXTINF:-1 tvg-id="ChannelLaw.cn@SD" tvg-logo="https://i.imgur.com/QcO5Gxl.png" group-title="教育",法制频道
-http://49.113.179.174:4022/udp/238.125.2.201:5140
+http://49.113.179.174:4022/rtp/238.125.2.201:5140
 #EXTINF:-1 tvg-id="CityTheaterChannel.cn@SD" tvg-logo="https://i.imgur.com/QgOIsjO.png" group-title="娱乐",城市影院
-http://49.113.179.174:4022/udp/238.125.1.60:5140
+http://49.113.179.174:4022/rtp/238.125.1.60:5140
 #EXTINF:-1 tvg-id="DocumentaryHumanitiesChannel.cn@SD" tvg-logo="https://i.imgur.com/CEcNWsE.png" group-title="未分类",纪录人文频道
-http://49.113.179.174:4022/udp/238.125.3.135:5140
+http://49.113.179.174:4022/rtp/238.125.3.135:5140
 #EXTINF:-1 tvg-id="DragonTVInternational.cn@SD" tvg-logo="https://i.imgur.com/WqM6xnF.png" group-title="各省卫视",东方卫视国际版 (360p)
 http://210.210.155.37/x6bnqe/s/s29/index.m3u8
 #EXTINF:-1 tvg-id="GameChannel.cn@SD" tvg-logo="https://i.imgur.com/UMdwCum.png" group-title="体育",游戏频道
-http://49.113.179.174:4022/udp/238.125.1.36:5140
+http://49.113.179.174:4022/rtp/238.125.1.36:5140
 #EXTINF:-1 tvg-id="GoldenEagleCartoon.cn@SD" tvg-logo="https://i.imgur.com/xfVHrKQ.png" group-title="儿童",金鹰卡通
-http://10.8.19.1:4022/udp/233.18.204.113:5140
+http://10.8.19.1:4022/rtp/233.18.204.113:5140
 #EXTINF:-1 tvg-id="GuangzhouTV.cn@SD" tvg-logo="https://i.imgur.com/ff3KQXp.png" group-title="综合",广州电视台
 https://tencentplaybusiness.gztv.com/live/zonghes.m3u8
 #EXTINF:-1 tvg-id="HarbinComprehensiveNewsChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/haerbin.jpg" group-title="新闻",哈尔滨综合新闻频道
@@ -74,9 +74,9 @@ https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594
 #EXTINF:-1 tvg-id="HarbinMovieChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/haerbin.jpg" group-title="电影",哈尔滨影视频道
 https://stream.hrbtv.net/yspd/playlist.m3u8
 #EXTINF:-1 tvg-id="HunanTV.cn@SD" tvg-logo="https://i.postimg.cc/DZdGG2TD/hunantv.png" group-title="各省卫视",湖南卫视 (2160p)
-http://10.8.19.1:4022/udp/233.18.204.86:5140
+http://10.8.19.1:4022/rtp/233.18.204.86:5140
 #EXTINF:-1 tvg-id="JiaJiaCartoon.cn@SD" tvg-logo="https://i.imgur.com/0TLG3Xk.png" group-title="儿童",佳佳卡通
-http://10.8.19.1:4022/udp/233.18.204.151:5140
+http://10.8.19.1:4022/rtp/233.18.204.151:5140
 #EXTINF:-1 tvg-id="JiangxiChildrensChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/jxtv6.jpg" group-title="儿童",江西少儿频道
 https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv6.m3u8
 #EXTINF:-1 tvg-id="JiangxiMovieChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/jiangxi.jpg" group-title="电影",江西影视频道
@@ -84,98 +84,98 @@ https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv4.m3u8
 #EXTINF:-1 tvg-id="JilinMovieChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/jlyspd.jpg" group-title="电影",吉林影视频道
 https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/906341e6f19b4c4bacdc89941eb85d12/index.m3u8
 #EXTINF:-1 tvg-id="LaughterTheater.cn@SD" tvg-logo="https://i.imgur.com/CrFesS6.png" group-title="娱乐",欢笑剧场
-http://10.8.19.1:4022/udp/233.18.204.205:5140
+http://10.8.19.1:4022/rtp/233.18.204.205:5140
 #EXTINF:-1 tvg-id="NeiMonggolTV.cn@SD" tvg-logo="https://i.imgur.com/WeugJBE.png" group-title="未分类",内蒙古卫视
-http://10.8.19.1:4022/udp/233.18.204.217:5140
+http://10.8.19.1:4022/rtp/233.18.204.217:5140
 #EXTINF:-1 tvg-id="QTV1.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/qdtv1.jpg" group-title="新闻",青岛综合频道
 http://video10.qtv.com.cn/drm/qtv1at/manifest.m3u8
 #EXTINF:-1 tvg-id="QTV3.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/qdtv3.jpg" group-title="电影",青岛影视频道
 http://video10.qtv.com.cn/drm/qtv3at/manifest.m3u8
 #EXTINF:-1 tvg-id="ShaanxiAgroforestrySatelliteTV.cn@SD" tvg-logo="https://i.imgur.com/j4yT8ff.png" group-title="各省卫视",陕西农林卫视
-http://49.113.179.174:4022/udp/238.125.4.154:5140
+http://49.113.179.174:4022/rtp/238.125.4.154:5140
 #EXTINF:-1 tvg-id="ShandongEducationTV.cn@SD" tvg-logo="https://i.imgur.com/yb10kF0.png" group-title="教育",山东教育电视台
-http://49.113.179.174:4022/udp/238.125.0.156:5140
+http://49.113.179.174:4022/rtp/238.125.0.156:5140
 #EXTINF:-1 tvg-id="ShanghaiEducationTelevisionStation.cn@SD" tvg-logo="" group-title="教育",上海教育电视台
-http://10.8.19.1:4022/udp/233.18.204.63:5140
+http://10.8.19.1:4022/rtp/233.18.204.63:5140
 #EXTINF:-1 tvg-id="ShenzhenSatelliteTV.cn@SD" tvg-logo="" group-title="各省卫视",深圳卫视 (2160p)
-http://10.8.19.1:4022/udp/233.18.204.89:5140
+http://10.8.19.1:4022/rtp/233.18.204.89:5140
 #EXTINF:-1 tvg-id="SihaiFishingChannel.cn@SD" tvg-logo="https://i.imgur.com/BCJes2k.png" group-title="未分类",四海钓鱼频道
-http://49.113.179.174:4022/udp/238.125.2.172:5140
+http://49.113.179.174:4022/rtp/238.125.2.172:5140
 #EXTINF:-1 tvg-id="SipingTV.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/sptv1.jpg" group-title="综合",四平电视台
 http://stream2.jlntv.cn/sptv/sd/live.m3u8?_upt=f27750421743154598
 #EXTINF:-1 tvg-id="SMGFootballChannel.cn@SD" tvg-logo="https://i.imgur.com/BaBr5fM.png" group-title="体育",上海五星体育
-http://10.8.19.1:4022/udp/233.18.204.58:5140
+http://10.8.19.1:4022/rtp/233.18.204.58:5140
 #EXTINF:-1 tvg-id="TonghuaTV.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/thtv1.jpg" group-title="新闻",通化电视台
 http://lsfb.avap.jilintv.cn/zqvk7vpj/channel/43ea5771aa44421591f9dfd2b71f1b9b/index.m3u8
 #EXTINF:-1 tvg-id="ToonmaxTV.cn@SD" tvg-logo="https://i.imgur.com/Uhwv1il.png" group-title="儿童",炫动卡通
-http://49.113.179.174:4022/udp/238.125.4.28:5140
+http://49.113.179.174:4022/rtp/238.125.4.28:5140
 #EXTINF:-1 tvg-id="XinjiangTV1.cn@SD" tvg-logo="https://i.imgur.com/VLaQYn4.png" group-title="未分类",新疆卫视1
 https://klmysjtzb.rcsxzx.com/hls/klmy2.m3u8
 #EXTINF:-1 tvg-id="XinjiangTV12.cn@SD" tvg-logo="https://i.imgur.com/ZdqKVeE.png" group-title="未分类",新疆卫视12
-http://49.113.179.174:4022/udp/238.125.3.185:5140
+http://49.113.179.174:4022/rtp/238.125.3.185:5140
 #EXTINF:-1 tvg-id="YicaiTV.cn@SD" tvg-logo="https://i.imgur.com/OLj4mKK.png" group-title="未分类",第一财经频道
-http://10.8.19.1:4022/udp/233.18.204.59:5140
+http://10.8.19.1:4022/rtp/233.18.204.59:5140
 #EXTINF:-1 tvg-id="ZhejiangSatelliteTV.cn@SD" tvg-logo="https://i.postimg.cc/mrtBcmTx/zhejiangsatellitetv.png" group-title="各省卫视",浙江卫视
-http://10.8.19.1:4022/udp/233.18.204.84:5140
+http://10.8.19.1:4022/rtp/233.18.204.84:5140
 #EXTINF:-1 tvg-id="ZhejiangInternationalChannel.cn@SD" tvg-logo="https://i.imgur.com/XOL1Hph.png" group-title="各省卫视",浙江国际频道
 https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8
 #EXTINF:-1 tvg-id="DragonTV.cn@SD" tvg-logo="https://i.imgur.com/WqM6xnF.png" group-title="各省卫视",东方卫视 (2160p)
-http://10.8.19.1:4022/udp/233.18.204.51:5140
+http://10.8.19.1:4022/rtp/233.18.204.51:5140
 #EXTINF:-1 tvg-id="YunnanSatelliteTV.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/yunnantv.jpg" group-title="各省卫视",云南卫视 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.106:5140
+http://10.8.19.1:4022/rtp/233.18.204.106:5140
 #EXTINF:-1 tvg-id="YouManCartoonChannel.cn@SD" tvg-logo="https://i.imgur.com/GZInf2W.png" group-title="儿童",优漫卡通 (576p)
 http://183.207.249.15/PLTV/4/224/3221225933/index.m3u8
 #EXTINF:-1 tvg-id="CHCAction.cn@SD" tvg-logo="https://i.imgur.com/AuiVcyh.png" group-title="电影",动作电影 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.174:5140
+http://10.8.19.1:4022/rtp/233.18.204.174:5140
 #EXTINF:-1 tvg-id="CNDFilmDiscoveryChannel.cn@SD" tvg-logo="https://i.imgur.com/2FJfPDx.png" group-title="未分类",发现之旅 (576p)
 http://125.210.152.18:9090/live/FXZL_750.m3u8
 #EXTINF:-1 tvg-id="JilinSatelliteTV.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/jilintv.jpg" group-title="各省卫视",吉林卫视 (2160p)
-http://10.8.19.1:4022/udp/233.18.204.108:5140
+http://10.8.19.1:4022/rtp/233.18.204.108:5140
 #EXTINF:-1 tvg-id="SichuanSatelliteTV.cn@SD" tvg-logo="https://i.imgur.com/r5xivih.png" group-title="各省卫视",四川卫视 (576p)
-http://10.8.19.1:4022/udp/233.18.204.99:5140
+http://10.8.19.1:4022/rtp/233.18.204.99:5140
 #EXTINF:-1 tvg-id="TianjinTV.cn@SD" tvg-logo="https://i.imgur.com/Bg24eaH.png" group-title="各省卫视",天津卫视 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.97:5140
+http://10.8.19.1:4022/rtp/233.18.204.97:5140
 #EXTINF:-1 tvg-id="NingxiaSatelliteChannel.cn@SD" tvg-logo="https://i.imgur.com/nUQE4Ib.png" group-title="各省卫视",宁夏卫视 (576p)
-http://10.8.19.1:4022/udp/233.18.204.230:5140
+http://10.8.19.1:4022/rtp/233.18.204.230:5140
 #EXTINF:-1 tvg-id="AnhuiSatelliteTV.cn@SD" tvg-logo="https://i.imgur.com/n5LABhB.png" group-title="各省卫视",安徽卫视 (2160p)
-http://10.8.19.1:4022/udp/233.18.204.93:5140
+http://10.8.19.1:4022/rtp/233.18.204.93:5140
 #EXTINF:-1 tvg-id="CHCHomeTheater.cn@SD" tvg-logo="https://i.imgur.com/AwBldBE.png" group-title="电影",家庭影院 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.173:5140
+http://10.8.19.1:4022/rtp/233.18.204.173:5140
 #EXTINF:-1 tvg-id="ShandongSatelliteTV.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/shandongtv.jpg" group-title="各省卫视",山东卫视 (720p)
-http://10.8.19.1:4022/udp/233.18.204.91:5140
+http://10.8.19.1:4022/rtp/233.18.204.91:5140
 #EXTINF:-1 tvg-id="ShandongTV.cn@SD" tvg-logo="https://i.imgur.com/t3ICc4i.png" group-title="各省卫视",山东卫视 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.91:5140
+http://10.8.19.1:4022/rtp/233.18.204.91:5140
 #EXTINF:-1 tvg-id="ShanxiTV.cn@SD" tvg-logo="https://i.imgur.com/UfKJBWW.png" group-title="各省卫视",山西卫视 (2160p)
-http://10.8.19.1:4022/udp/233.18.204.211:5140
+http://10.8.19.1:4022/rtp/233.18.204.211:5140
 #EXTINF:-1 tvg-id="GuangdongSatelliteTV.cn@SD" tvg-logo="https://parco-zh.github.io/demo/guangdong.jpg" group-title="各省卫视",广东卫视 (2160p)
-http://10.8.19.1:4022/udp/233.18.204.88:5140
+http://10.8.19.1:4022/rtp/233.18.204.88:5140
 #EXTINF:-1 tvg-id="GuangxiTV.cn@SD" tvg-logo="https://i.imgur.com/dpre5Qs.png" group-title="各省卫视",广西卫视 (576p)
-http://10.8.19.1:4022/udp/233.18.204.107:5140
+http://10.8.19.1:4022/rtp/233.18.204.107:5140
 #EXTINF:-1 tvg-id="DunhuangTV.cn@SD" tvg-logo="https://i.imgur.com/RpGKOQd.jpg" group-title="未分类",敦煌电视台 (1080p)
 http://117.156.28.119/270000001111/1110000028/index.m3u8
 #EXTINF:-1 tvg-id="JiangsuSportsLeisureChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/jsty.jpg" group-title="体育",江苏体育 (576p)
 http://183.207.248.71/gitv/live1/G_JSTY/G_JSTY
 #EXTINF:-1 tvg-id="JiangsuSatelliteTV.cn@SD" tvg-logo="" group-title="各省卫视",江苏卫视 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.85:5140
+http://10.8.19.1:4022/rtp/233.18.204.85:5140
 #EXTINF:-1 tvg-id="JiangxiTV.cn@SD" tvg-logo="https://i.imgur.com/RrLthH3.png" group-title="各省卫视",江西卫视 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.95:5140
+http://10.8.19.1:4022/rtp/233.18.204.95:5140
 #EXTINF:-1 tvg-id="HebeiTV.cn@SD" tvg-logo="https://i.imgur.com/Z5Ppzbi.png" group-title="各省卫视",河北卫视 (2160p)
-http://10.8.19.1:4022/udp/233.18.204.103:5140
+http://10.8.19.1:4022/rtp/233.18.204.103:5140
 #EXTINF:-1 tvg-id="HenanTVSatellite.cn@SD" tvg-logo="https://i.imgur.com/IBW26kV.png" group-title="各省卫视",河南卫视 (2160p)
-http://10.8.19.1:4022/udp/233.18.204.105:5140
+http://10.8.19.1:4022/rtp/233.18.204.105:5140
 #EXTINF:-1 tvg-id="HainanSatelliteTV.cn@SD" tvg-logo="https://i.imgur.com/j6kY8nh.png" group-title="各省卫视",海南卫视 (576p)
-http://10.8.19.1:4022/udp/233.18.204.102:5140
+http://10.8.19.1:4022/rtp/233.18.204.102:5140
 #EXTINF:-1 tvg-id="HubeiSatelliteTV.cn@SD" tvg-logo="https://i.imgur.com/CTRa9BJ.png" group-title="各省卫视",湖北卫视 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.92:5140
+http://10.8.19.1:4022/rtp/233.18.204.92:5140
 #EXTINF:-1 tvg-id="GansuTV.cn@SD" tvg-logo="https://i.imgur.com/dANSiug.png" group-title="各省卫视",甘肃卫视 (576p)
-http://10.8.19.1:4022/udp/233.18.204.110:5140
+http://10.8.19.1:4022/rtp/233.18.204.110:5140
 #EXTINF:-1 tvg-id="GuizhouTV.cn@SD" tvg-logo="https://i.imgur.com/nkcKCdr.png" group-title="各省卫视",贵州卫视 (576p)
-http://10.8.19.1:4022/udp/233.18.204.101:5140
+http://10.8.19.1:4022/rtp/233.18.204.101:5140
 #EXTINF:-1 tvg-id="LiaoningTV.cn@SD" tvg-logo="https://i.postimg.cc/Jz87vbVf/liaoningtv.png" group-title="各省卫视",辽宁卫视 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.96:5140
+http://10.8.19.1:4022/rtp/233.18.204.96:5140
 #EXTINF:-1 tvg-id="ChongqingTVInternational.cn@SD" tvg-logo="https://i.imgur.com/ggKci6o.png" group-title="各省卫视",重庆卫视 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.100:5140
+http://10.8.19.1:4022/rtp/233.18.204.100:5140
 #EXTINF:-1 tvg-id="QinghaiTV.cn@SD" tvg-logo="https://i.imgur.com/Nyuxo8S.png" group-title="各省卫视",青海卫视 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.112:5140
+http://10.8.19.1:4022/rtp/233.18.204.112:5140
 #EXTINF:-1 tvg-id="HeilongjiangTV.cn@SD" tvg-logo="https://i.imgur.com/9fj1uba.png" group-title="各省卫视",黑龙江 (1080p)
-http://10.8.19.1:4022/udp/233.18.204.90:5140
+http://10.8.19.1:4022/rtp/233.18.204.90:5140
