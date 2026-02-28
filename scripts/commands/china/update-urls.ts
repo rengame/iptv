@@ -3,8 +3,8 @@
  *
  * 从上游来源同步 china.m3u 的流地址，按以下优先级依次尝试：
  *
- *   1. iptv-org  streams/cn*.m3u  —— 通过 tvg-id 精确匹配
- *   2. fanmingming/live           —— 通过标准化频道名模糊匹配（fallback）
+ *   1. fanmingming/live           —— 通过标准化频道名模糊匹配（首选）
+ *   2. iptv-org  streams/cn*.m3u  —— 通过 tvg-id 精确匹配（备选）
  *
  * 只更新 URL（及 #EXTVLCOPT 行），完全保留 group-title、中文名、logo 等。
  * 占位符 URL（http://0.0.0.0）会被优先替换。
@@ -190,58 +190,58 @@ async function main() {
   for (const entry of chinaEntries) {
     const isPlaceholder = entry.url === BROKEN_URL
     const knownDeadUrl = entry.tvgId ? deadRecord[entry.tvgId] : undefined
+    const name = displayName(entry.extinf)
+    const normName = normalizeName(name)
 
-    // ── 来源 1：iptv-org，通过 tvg-id 精确匹配 ──
+    // ── 来源 1：fanmingming，通过标准化名称匹配（首选）──
+    const fanmingming = fanmingmingMap.get(normName) ?? fanmingmingMap.get(entry.tvgId ?? '')
+    if (fanmingming && fanmingming.url !== knownDeadUrl) {
+      const urlChanged = fanmingming.url !== entry.url
+      const optsChanged =
+        JSON.stringify(fanmingming.extvlcopt) !== JSON.stringify(entry.extvlcopt)
+
+      if (isPlaceholder || urlChanged || optsChanged) {
+        console.log(`[fanmingming] ${name.trim()}`)
+        if (urlChanged || isPlaceholder) {
+          console.log(`  旧: ${entry.url}`)
+          console.log(`  新: ${fanmingming.url}`)
+        }
+        entry.url = fanmingming.url
+        entry.extvlcopt = fanmingming.extvlcopt
+        fromFanmingming++
+        // fanmingming 提供了新 URL，清除死链记录
+        if (knownDeadUrl && entry.tvgId) {
+          delete deadRecord[entry.tvgId]
+          clearedDead.push(entry.tvgId)
+        }
+      }
+      // fanmingming 是首选，匹配到就停止，不再查 iptv-org
+      continue
+    }
+
+    // ── 来源 2：iptv-org，通过 tvg-id 精确匹配（备选）──
     const upstream = entry.tvgId ? upstreamMap.get(entry.tvgId) : undefined
-    if (upstream) {
-      // 如果 iptv-org 的 URL 和记录的死链相同 → 跳过，去找 fanmingming
-      if (upstream.url === knownDeadUrl) {
-        // fall through to fanmingming below
-      } else {
-        const urlChanged = upstream.url !== entry.url
-        const optsChanged =
-          JSON.stringify(upstream.extvlcopt) !== JSON.stringify(entry.extvlcopt)
+    if (upstream && upstream.url !== knownDeadUrl) {
+      const urlChanged = upstream.url !== entry.url
+      const optsChanged =
+        JSON.stringify(upstream.extvlcopt) !== JSON.stringify(entry.extvlcopt)
 
-        if (urlChanged || optsChanged) {
-          const name = displayName(entry.extinf)
-          console.log(`[iptv-org] ${name.trim()}`)
-          if (urlChanged) {
-            console.log(`  旧: ${entry.url}`)
-            console.log(`  新: ${upstream.url}`)
-          }
-          entry.url = upstream.url
-          entry.extvlcopt = upstream.extvlcopt
-          fromIptvOrg++
-          // iptv-org 提供了新 URL，清除死链记录
-          if (knownDeadUrl && entry.tvgId) {
-            delete deadRecord[entry.tvgId]
-            clearedDead.push(entry.tvgId)
-          }
-        } else {
-          unchanged++
+      if (isPlaceholder || urlChanged || optsChanged) {
+        console.log(`[iptv-org] ${name.trim()}`)
+        if (urlChanged || isPlaceholder) {
+          console.log(`  旧: ${entry.url}`)
+          console.log(`  新: ${upstream.url}`)
+        }
+        entry.url = upstream.url
+        entry.extvlcopt = upstream.extvlcopt
+        fromIptvOrg++
+        // iptv-org 提供了新 URL，清除死链记录
+        if (knownDeadUrl && entry.tvgId) {
+          delete deadRecord[entry.tvgId]
+          clearedDead.push(entry.tvgId)
         }
         continue
       }
-    }
-
-    // ── 来源 2：fanmingming，通过标准化名称匹配 ──
-    const name = displayName(entry.extinf)
-    const normName = normalizeName(name)
-    const fallback = fanmingmingMap.get(normName) ?? fanmingmingMap.get(entry.tvgId ?? '')
-
-    if (fallback && fallback.url !== knownDeadUrl && (isPlaceholder || fallback.url !== entry.url)) {
-      console.log(`[fanmingming] ${name.trim()}`)
-      console.log(`  旧: ${entry.url}`)
-      console.log(`  新: ${fallback.url}`)
-      entry.url = fallback.url
-      entry.extvlcopt = fallback.extvlcopt
-      fromFanmingming++
-      // fanmingming 提供了新 URL，清除死链记录
-      if (knownDeadUrl && entry.tvgId) {
-        delete deadRecord[entry.tvgId]
-        clearedDead.push(entry.tvgId)
-      }
-      continue
     }
 
     if (isPlaceholder) {
@@ -266,8 +266,8 @@ async function main() {
   }
 
   console.log('\n════════════════════════════════════')
-  console.log(`来自 iptv-org    更新：${fromIptvOrg}`)
   console.log(`来自 fanmingming 更新：${fromFanmingming}`)
+  console.log(`来自 iptv-org    更新：${fromIptvOrg}`)
   console.log(`无变化：${unchanged}`)
   if (clearedDead.length > 0) {
     console.log(`已清除死链记录：${clearedDead.length} 条（找到新 URL）`)
